@@ -214,6 +214,10 @@ overlap */
     flex: 0 0 50%;
     max-width: 50%;
   }
+/*wanted to fix the centering of this image, but it doesn't do anything */
+  .background {
+    margin-left: 0px;
+  }
  
   /* selects the last child to grow to full width if it has space to grow */
   
@@ -235,7 +239,8 @@ overlap */
   margin-top: 30px;
 }
 
-/*for a mobile phone */
+/*for a mobile phone
+doesn't work -_- */
 @media only screen 
 and (min-device-width: 375px) 
 and (max-device-width: 812px) 
@@ -244,7 +249,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
   .text-right {
     display:flex;
     flex-direction: column;
-    border-bottom: 10px lightskyblue;
+    border-bottom: 10px var(--dark-blue);
   }
 
   header {

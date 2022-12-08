@@ -1,204 +1,155 @@
-/*Homework 2*/
-
-/* Universal Selector */
-* {
-  margin:0;
-  padding:0;  
-}
+/* NOT THE HOMEWORK */
+/*I can't change the heading size or get box sizes right*/
+/*must resolve merge error*/
 
 :root {
-  --dark-blue: darkblue;
-  --light-blue: lightblue;
-  --light-sky-blue: lightskyblue;
-  --alternative-text: teal;
+    --background: coral;
+    --wire-frame: pink;
+    --inside-box: lightblue;
+    --text: teal;
 }
 
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-  align-self: center;
+::selection {
+    background-color: var(--text);
+    color: var(--inside-box);
+
 }
 
-ul {
-  padding-top: 15px;
-  padding-bottom: 30px;
+html {
+    font-size: 62.5%;
 }
 
-img:hover {
-  transform: scale(1.2);
-}
-/*I also wanted this to make the 
-general link go slightly higher
-but it doesn't do anything but move
-it further from the image. I kind of
-like how it looks anyway */
-portfolio {
-  margin-top: 20px;
-}
-
-/*so that my image doesn't pop up */
-.my-picture:hover {
-  transform: none;
-}
-
-/* Element Selectors */
 body {
-  position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
-  font-size: 20px;
-  background-color:var(--light-sky-blue);
-  color: var(--dark-blue);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 h1,
-h2 {
-  margin: 20px;
+h2,
+h3 {
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 4 rem;
 }
 
 h2 {
-  font-size: 1.5rem
+    font-size: 3.5 rem;
 }
 
-main {
-  padding: 60px 0;
+h3 {
+    font-size: 3 rem;
 }
 
-li {
-  display: inline;
-  padding: 0px 20px;
-  text-decoration: none;
+p {
+    margin-bottom: 1rem;
 }
-
-figure {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-header,
-footer {
-  height: 60px;
-  width: 100%;
-  line-height: 60px;
-  background-color: var(--light-sky-blue);
-}
-
 
 header {
-  position: absolute;
-  border-bottom: 10px solid var(--dark-blue);
+    text-align: center;
+    width: 95%;
+    padding: 2.5 rem;
+    margin: 0 auto;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid var(--wire-frame);
+    border-radius: 8px;
+    background-image: linear-gradient(var(--wire-frame), var(--inside-box));
 }
 
-footer {
-  position: absolute;
-  margin-top: 0;
-  bottom: 0;
-  border-bottom: 10px lightskyblue;
-  color: darkblue;    
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+.page-title {
+    font-size: 5rem;
+    display: relative;
+    margin-top: 5px;
+    margin-bottom: 50px
 }
 
-
-
-section {
-  margin-bottom: 0;
-  padding: 20px 10px 40px 10px;
-  border-top: 3px var(--dark-blue);
-  background-color:  var(--light-sky-blue);
+.intro {
+    display: block;
 }
-
-textarea {
-  vertical-align: top;
-  height: 60px;
-}
-  
-/* Class Selectors */
-
-.justify-center {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.my-picture {
-  border-radius: 30px;
-  width: 40%;
-  height: 70%;
-  transform: none;
-}
-
-.background {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  margin: 20px;
-  justify-content: center;
-  transform: none;
-}
-
-
-.text-center {
-  text-align: center;
-  display: block;
-}
-
 
 .title {
-  text-align: center;
+    padding: 1 rem;
+    font-size: 4 rem;
+}
+/* make both size different? */
+
+main {
+    margin: 2rem auto;
+    width: 95%;
+    display: block;
+  }
+
+footer {
+    text-align: center;
+    padding: 50px;
 }
 
-.my-picture {
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*why does this need to be
+    specified? Isn't this the default?*/
+    /*need to pull other elements closer*/
+    /*width: 30%; */
+}
+
+.justify-center {
+    justify-content: center;
+}
+/*why does there need to be a separate class for this? */
+.column {
   display: flex;
-  position: center;
+  flex: 1 0 100%;
+  padding: 0px;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  margin-bottom: 20px;
 }
-
-.text-right {
-  text-align: right;
-  font-size: 2rem;
-}
-
-article {
-  display: flex;
-}
-
-.projects {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.background {
-  margin-left: 100px;
-}
-
-/* Not a part of homework
-
-.OMFGDOGS.LINK {
-  padding: 20px;
-}
-
-.OMFGDOGS.LINK:hover {
-  color(background-image: lineargradient(to bottom right,red,orange,yellow,green,blue,violet))
-} */
-
-/* ID Selectors */
-
-/* can't fix the size of the container 
-but will come back to this
-#first-project {
-  width: 280px;
-  height: 400px;
-} */
-
-/*code Jason helped me add so
-that the elements wouldn't
-overlap */
 
 .card-code {
-  width: 100%;
-  height: auto;
+    min-height: 80%;
+    outline: 3px dashed var(--wire-frame);
+    outline-offset: -20px;
+    transition: transform 5s;
+    margin: 10%;
+    padding: 10%;
+}
+/*added outline to code on card */
+
+
+.card .title {
+    /*position: relative;*/
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--background);
+    color: var(--text);
+    border: 2px solid var(--wire-frame);
+    border-radius: 8px;
+    text-align: center;
+    background-image: linear-gradient(var(--background), var(--wire-frame));
+    transition: transform 5s;
+}
+/*added a text-align center */
+.card-code:hover,
+.card:hover .title {
+    transform: scale(1.1);
+}
+/*skewed*/
+.card .code {
+    flex-grow: 1;
 }
 
 /*made the image bigger */
@@ -221,8 +172,10 @@ overlap */
  
   /* selects the last child to grow to full width if it has space to grow */
   
-  .column:last-child {
-    flex-grow: 1;
+    /* select the last child to grow to full width if it has space to grow */
+    .column:last-child {
+      flex-grow: 1;
+    }
   }
 }
 
@@ -251,32 +204,4 @@ and (-webkit-min-device-pixel-ratio: 3) {
     flex-direction: column;
     border-bottom: 10px var(--dark-blue);
   }
-
-  header {
-    border-bottom: none;
-  }
-
-}
-
-/*so that nav links don't change purple when clicked */
-
-header a:link { 
-  text-decoration: none;
-  color:var(--alternative-text);
-}
-
-header a:visited { 
-  text-decoration: none;
-  color:var(--alternative-text);
-
-}
-
-header a:hover { 
-  text-decoration: none;
-  color:var(--alternative-text); 
-}
-
-header a:active { 
-  text-decoration: none;
-  color:var(--alternative-text);
-}
+/* color scheme sourced from http://khroma.co/generator/ */

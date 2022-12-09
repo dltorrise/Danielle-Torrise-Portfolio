@@ -237,15 +237,14 @@ overlap */
   margin-top: 30px;
 }
 
-/*for a mobile phone
-doesn't work -_- */
+/*fixes small error */ 
 @media screen and (max-width: 576px) and (min-width: 321px) {
   #my-picture {
     margin-top: 100px;
   }
 }
-
-@media screen and (max-width: 320px) {
+/*for mobile phone */ 
+@media screen and (max-device-width: 320px) {
 
   .text-right ul li {
     display: flex;

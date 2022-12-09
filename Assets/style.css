@@ -38,13 +38,12 @@ portfolio {
 }
 
 /*so that my image doesn't pop up */
-.my-picture:hover {
+#my-picture:hover {
   transform: none;
 }
 
 /* Element Selectors */
 body {
-  position: relative;
   font-family: "Goudy Bookletter 1911", sans-serif;
   font-size: 20px;
   background-color:var(--light-sky-blue);
@@ -85,14 +84,12 @@ footer {
   background-color: var(--light-sky-blue);
 }
 
-
+/*absolute removes you from document flow */
 header {
-  position: absolute;
   border-bottom: 10px solid var(--dark-blue);
 }
 
 footer {
-  position: absolute;
   margin-top: 0;
   bottom: 0;
   border-bottom: 10px lightskyblue;
@@ -121,10 +118,11 @@ textarea {
   justify-content: center;
 }
 
-.my-picture {
+#my-picture {
   border-radius: 30px;
   width: 40%;
   height: 70%;
+  margin-top: 50px;
   transform: none;
   align-self: center;
 }
@@ -241,21 +239,38 @@ overlap */
 
 /*for a mobile phone
 doesn't work -_- */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px) 
-and (-webkit-min-device-pixel-ratio: 3) {
+@media screen and (max-width: 576px) and (min-width: 321px) {
+  #my-picture {
+    margin-top: 100px;
+  }
+}
 
-  .text-right {
-    display:flex;
+@media screen and (max-width: 320px) {
+
+  .text-right ul li {
+    display: flex;
     flex-direction: column;
-    border-bottom: 10px var(--dark-blue);
+    font-weight: 800;
+    align-items: center;
   }
 
   header {
+    display: flex;
     border-bottom: none;
+    height: auto;
+    flex-direction: column-reverse;
+    margin-bottom: 0px;
   }
 
+  #my-picture {
+    margin-top: 0px;
+    width: 80%;
+    align-self: center;
+  }
+
+  main {
+    padding: 0px;
+  }
 }
 
 /*so that nav links don't change purple when clicked */

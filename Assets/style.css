@@ -6,6 +6,8 @@
   padding:0;  
 }
 
+/*root selector */ 
+
 :root {
   --dark-blue: darkblue;
   --light-blue: lightblue;
@@ -28,11 +30,7 @@ ul {
 img:hover {
   transform: scale(1.2);
 }
-/*I also wanted this to make the 
-general link go slightly higher
-but it doesn't do anything but move
-it further from the image. I kind of
-like how it looks anyway */
+
 portfolio {
   margin-top: 20px;
 }
@@ -96,8 +94,6 @@ footer {
   color: darkblue;    
 }
 
-
-
 section {
   margin-bottom: 0;
   padding: 20px 10px 40px 10px;
@@ -116,15 +112,6 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#my-picture {
-  border-radius: 30px;
-  width: 40%;
-  height: 70%;
-  margin-top: 50px;
-  transform: none;
-  align-self: center;
 }
 
 .background {
@@ -147,9 +134,6 @@ textarea {
 .title {
   text-align: center;
 }
-
-
-
 
 .text-right {
   text-align: right;
@@ -180,7 +164,28 @@ article {
   color(background-image: lineargradient(to bottom right,red,orange,yellow,green,blue,violet))
 } */
 
+.card-code {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+
 /* ID Selectors */
+/*made the image bigger */
+
+#my-picture {
+  border-radius: 30px;
+  width: 40%;
+  height: 70%;
+  margin-top: 50px;
+  transform: none;
+  align-self: center;
+}
+
+#first-project img {
+  width: 300px;
+  height: 400px;
+}
 
 /* can't fix the size of the container 
 but will come back to this
@@ -193,18 +198,12 @@ but will come back to this
 that the elements wouldn't
 overlap */
 
-.card-code {
-  width: 100%;
-  height: auto;
-  flex-direction: column;
+/*pushed contact down so that it would look better */
+
+#contact {
+  margin-top: 30px;
 }
 
-/*made the image bigger */
-
-#first-project img {
-  width: 300px;
-  height: 400px;
-}
 /*The media queries */
 @media screen and (min-width: 768px) {
   /* set columns to only be 50% of the width and not grow for tablets*/
@@ -212,6 +211,7 @@ overlap */
     flex: 0 0 50%;
     max-width: 50%;
   }
+
 /*wanted to fix the centering of this image, but it doesn't do anything */
   .background {
     margin-left: 0px;
@@ -231,10 +231,6 @@ overlap */
     flex: 0 0 33.333%;
     max-width: 33.333%;
   }
-}
-/*pushed contact down so that it would look better */
-#contact {
-  margin-top: 30px;
 }
 
 /*fixes small error */ 

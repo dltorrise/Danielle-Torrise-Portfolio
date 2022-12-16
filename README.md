@@ -11,7 +11,7 @@ Homework-2
 
 ## Link and Screenshot
 
-You can click [here](https://dltorrise.github.io/Homework-2/) to view the site.
+You can click [here](https://dltorrise.github.io/Danielle-Torrise-Portfolio/) to view the site.
 
 Screenshot
 ![A screenshot of my portfolio](Images/Screenshot-Homework-2.png)

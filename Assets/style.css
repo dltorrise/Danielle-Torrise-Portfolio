@@ -154,21 +154,27 @@ article {
   align-self: center;
 }
 
-/*Not a part of homework*/
+/*Not a part of homework and doesn't work
 
-.OMFGDOGS.LINK {
+.OMFGDOGS.link {
   padding: 20px;
 }
 
-.OMFGDOGS.LINK:hover {
-  color(background-image: linear-gradient(to bottom right,red,orange,yellow,green,blue,violet))
+.OMFGDOGS.link:hover {
+  background-image: linear-gradient(to bottom right,red,orange,yellow,green,blue,violet)
 } 
+*/
 
 .card-code {
   width: 100%;
   height: auto;
   flex-direction: column;
   /*outline: 3px solid var(--dark-blue);*/
+}
+
+.first-project img {
+  width: 300px;
+  height: 350px;
 }
 
 /* ID Selectors */
@@ -183,10 +189,6 @@ article {
   align-self: center;
 }
 
-.first-project img {
-  width: 300px;
-  height: 350px;
-}
 
 /* can't fix the size of the container 
 but will come back to this

@@ -205,8 +205,13 @@ overlap */
 
 #contact {
   margin-top: 30px;
+  display: block;
+  align-self: center;
 }
 
+.favorite-website {
+  display: block;
+}
 /*The media queries */
 @media screen and (min-width: 768px) {
   /* set columns to only be 50% of the width and not grow for tablets*/

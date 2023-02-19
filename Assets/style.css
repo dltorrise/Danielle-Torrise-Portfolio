@@ -15,13 +15,6 @@
   --alternative-text: teal;
 }
 
-img {
-  width: 200px;
-  height: 300px;
-  object-fit: contain;
-  align-self: center;
-}
-
 ul {
   padding-top: 15px;
   padding-bottom: 30px;
@@ -101,6 +94,9 @@ section {
   background-color:  var(--light-sky-blue);
 }
 
+section p {
+  text-align: center;
+}
 textarea {
   vertical-align: top;
   height: 60px;
@@ -172,9 +168,11 @@ article {
   /*outline: 3px solid var(--dark-blue);*/
 }
 
-.first-project img {
+img {
   width: 300px;
   height: 350px;
+  object-fit: contain;
+  align-self: center;
 }
 
 /* ID Selectors */
@@ -182,11 +180,12 @@ article {
 
 #my-picture {
   border-radius: 30px;
-  width: 40%;
-  height: 70%;
-  margin-top: 100px;
+  width: 200;
+  height: 400;
+  margin-top: 50px;
   transform: none;
   align-self: center;
+  object-fit: cover;
 }
 
 

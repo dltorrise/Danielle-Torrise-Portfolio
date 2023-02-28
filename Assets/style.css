@@ -249,6 +249,12 @@ overlap */
 /*for mobile phone */ 
 @media screen and (max-device-width: 320px) {
 
+
+}
+
+
+@media (max-width: 690px) {
+  
   .text-right ul li {
     display: flex;
     flex-direction: column;
@@ -260,7 +266,7 @@ overlap */
     display: flex;
     border-bottom: none;
     height: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-bottom: 0px;
   }
 
@@ -274,7 +280,6 @@ overlap */
     padding: 0px;
   }
 }
-
 /*so that nav links don't change purple when clicked */
 
 header a:link { 

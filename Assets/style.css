@@ -262,12 +262,31 @@ overlap */
     align-items: center;
   }
 
+  img:hover {
+    transform: none;
+  }
+
   header {
     display: flex;
     border-bottom: none;
     height: auto;
     flex-direction: column;
     margin-bottom: 0px;
+  }
+
+  #title {
+    margin: 5px;
+  }
+
+  img {
+    width: 250px;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #projects {
+    margin: 0px;
   }
 
   #my-picture {
